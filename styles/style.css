@@ -1,4 +1,3 @@
-/* Set font size for whole page and for rem */
 html {
   font-size: 16px;
 }
@@ -13,13 +12,13 @@ img {
   height: 70px;
 }
 
-
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 }
 
-td {
+td, th {
   padding: 10px;
   text-align: center;
   border-bottom: 1px solid #d4d3d3;
@@ -29,50 +28,27 @@ td {
 .btn-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-#btn-add-random {
-  border: none;
-  text-decoration: none;
-  background-color: #d4d3d3;
-  color: #151515;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-  padding: 3px 16px;
-  border-radius: 4px;
-  margin: 20px;
+  gap: 16px;
   margin-bottom: 20px;
-  font-weight: 500;
-  width: 200px;
 }
 
-/* Add a pseudo selector to animate button #btn-add-random when clicked, with confeti */
-#btn-add-random:active {
-  background-color: #fd9a9a;
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #d4d3d3;
 }
 
+button:hover {
+  background-color: #bdbcbc;
+}
 
 .btn-like {
-  border: none;
-  text-decoration: none;
-  background-color: #d4d3d3;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  padding-top: 4px;
-  margin: 0 auto;
-}
-
-.btn-like:hover {
-  transition: 0.2s;
-  background-color: #a9a7a7;  
+  padding: 0;
 }
 
 .btn-like img {
@@ -81,24 +57,13 @@ td {
 }
 
 .btn-like.selected {
-  background-color: #fd9a9a;
+  background-color: #ffb5b5;
 }
 
 .btn-delete {
-  border: none;
-  text-decoration: none;
-  background-color: #d4d3d3;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-  padding: 3px 16px;
-  margin: 0 auto;  
-  border-radius: 4px;
+  background-color: #ffcdcd;
 }
 
 .btn-delete:hover {
-  transition: 0.2s;
-  background-color: #a9a7a7;  
+  background-color: #ff9b9b;
 }
